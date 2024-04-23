@@ -5,7 +5,7 @@ type FlexWrapperPropsType = {
   justify?: string
   align?: string
   wrap?: string
-  width?: string
+  grow?: number
 }
 
 export const FlexWrapper = styled.div<FlexWrapperPropsType>`
@@ -14,6 +14,5 @@ export const FlexWrapper = styled.div<FlexWrapperPropsType>`
   justify-content: ${props => props.justify || "flex-start"};
   align-items: ${props => props.align || "stretch"};
   flex-wrap: ${props => props.wrap || "nowrap"};
-  max-width: ${props => props.width || "100%"};
-  
+  flex-grow: ${props => props.grow || 0}
 `

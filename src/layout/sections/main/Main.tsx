@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import {FlexWrapper} from './FlexWrapper';
+import {FlexWrapper} from 'src/components/wrapper/FlexWrapper';
 import myPhoto from '../../../assets/images/myphoto.webp'
 
 export const Main = () => {
@@ -8,7 +8,7 @@ export const Main = () => {
     <StyledMain>
       {/*<StyledBackground backgroundColor={'rgba(34, 42, 54, 0.95)'}/>*/}
       {/*<StyledBackground backgroundImage={myPhoto}/>*/}
-      <FlexWrapper direction={'column'} width={'1196px'}>
+      <FlexWrapper direction={'column'}>
         <span>Hello!</span>
         <span>I’m Zarror Nibors</span>
         <div>
@@ -31,10 +31,7 @@ const StyledMain = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  
-  &:last-child{
-    
-  }
+  background-color: aquamarine;
   
 `
 
