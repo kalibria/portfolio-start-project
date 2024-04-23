@@ -8,13 +8,13 @@ export const GlobalStyles = createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
   }
+  ul {
+    list-style-type: none;
+  }
   
   li {
     text-decoration: none;
   }
   
-  a {
-    text-decoration: none;
-  }
 `
 
