@@ -1,11 +1,12 @@
 import './App.css';
+import {StyledHeader} from './components/StyledHeader';
 import styled from 'styled-components';
 
 
 function App() {
     return (
         <div className="App">
-            <Title>Welcome to IT-INCUBATOR</Title>
+            <StyledHeader/>
         </div>
     );
 }
