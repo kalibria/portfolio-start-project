@@ -1,11 +1,13 @@
 import './App.css';
-import {Header} from './layout/Header';
+import {Main} from 'src/layout/sections/main/Main';
+import {Header} from './layout/header/Header';
 
 
 function App() {
     return (
         <div className="App">
-            <Header/>
+          <Header/>
+          <Main/>
         </div>
     );
 }
