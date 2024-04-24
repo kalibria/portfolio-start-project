@@ -19,7 +19,7 @@ export const Skills = () => {
 };
 
 
-const StyledSkills = styled.div`
+const StyledSkills = styled.section`
   background-color: #000000;
   min-height: 200px;
   display: flex;
