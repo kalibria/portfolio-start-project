@@ -1,4 +1,5 @@
 import './App.css';
+import {Footer} from 'src/layout/footer/Footer';
 import {Connect} from 'src/layout/sections/connect/Connect';
 import {Main} from 'src/layout/sections/main/Main';
 import {Projects} from 'src/layout/sections/projects/Projects';
@@ -14,6 +15,7 @@ function App() {
           <Skills/>
           <Projects/>
           <Connect/>
+          <Footer/>
         </div>
     );
 }
