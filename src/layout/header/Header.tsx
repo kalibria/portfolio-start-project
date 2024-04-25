@@ -1,4 +1,5 @@
 import React from 'react';
+import {MyButton} from 'src/components/button/Button';
 import styled from 'styled-components';
 import {Menu} from 'src/components/menu/Menu';
 import {Logo} from 'src/components/logo/Logo';
@@ -8,7 +9,7 @@ export const Header = () => {
     <StyledHeader>
       <Logo/>
       <Menu/>
-      <button>Contact Me</button>
+      <MyButton text={"Contact Me"} padding={"10px"}/>
     </StyledHeader>
   )
 }

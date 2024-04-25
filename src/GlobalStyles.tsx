@@ -1,6 +1,10 @@
 import {createGlobalStyle} from 'styled-components';
 
 export const GlobalStyles = createGlobalStyle`
+  body {
+    font-family: "Poppins", sans-serif;;
+  }
+  
   *,
   *::before,
   *::after {
@@ -15,6 +19,11 @@ export const GlobalStyles = createGlobalStyle`
   li {
     text-decoration: none;
   }
+  
+  a {
+    text-decoration: none;
+  }
+  
   
 `
 
