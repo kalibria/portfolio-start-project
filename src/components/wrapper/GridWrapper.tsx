@@ -3,8 +3,8 @@ import styled from 'styled-components';
 type GridWrapperPropsStyle = {
   columns: string
   rows: string
-  columnGap: string
-  rowGap: string
+  columnGap?: string
+  rowGap?: string
 }
 
 export const GridWrapper = styled.div<GridWrapperPropsStyle>`
