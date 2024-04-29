@@ -9,7 +9,7 @@ export const Header = () => {
     <StyledHeader>
       <Logo/>
       <Menu/>
-      <MyButton text={"Contact Me"} padding={"10px"}/>
+      <MyButton text={"Contact Me"} paddingTop={"10px"} paddingBottom={"10px"} paddingLeft={"20px"} paddingRight={"20px"}/>
     </StyledHeader>
   )
 }
@@ -19,6 +19,11 @@ const StyledHeader = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: lightgray;
+  width: 1196px;
+  margin: 0 auto;
+  background-color: transparent;
+  
+  position: absolute;
+  top:10px;
 `
 
