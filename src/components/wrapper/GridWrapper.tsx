@@ -5,6 +5,8 @@ type GridWrapperPropsStyle = {
   rows: string
   columnGap?: string
   rowGap?: string
+  marginTop?: string
+  marginBottom?: string
 }
 
 export const GridWrapper = styled.div<GridWrapperPropsStyle>`
@@ -13,4 +15,6 @@ export const GridWrapper = styled.div<GridWrapperPropsStyle>`
   grid-template-rows: ${props => props.rows};
   column-gap: ${props => props.columnGap};
   row-gap: ${props => props.rowGap};
+  margin-top: ${props => props.marginTop};
+  margin-bottom: ${props => props.marginBottom};
 `

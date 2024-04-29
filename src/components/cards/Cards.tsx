@@ -1,4 +1,5 @@
 import React from 'react';
+import {StyledDescription} from 'src/components/description/StyledDescription';
 import {PROJECTS} from 'src/variables';
 import {CardDescription} from './cardDescription';
 import {CardTitle} from './CardTitle';
@@ -13,18 +14,22 @@ export const Cards = () => {
   const projectsList = PROJECTS.map((proj) => {
     return <StyledCard key={proj.id}>
       <Image src={proj.img} alt={proj.title}/>
-      <CardTitle title={proj.title}/>
-      <CardDescription text={proj.description}/>
-      <CardDescription text={`Tech stack : ${proj.techStack}`}/>
+      <CardTitle>{proj.title}</CardTitle>
+      <CardDescription>{proj.description}</CardDescription>
+      <CardDescription><span>Tech stack : {proj.techStack}</span></CardDescription>
       <FlexWrapper justify={"space-between"}>
-        <MyLink iconId={"chain"} linkText={"Live Preview"} link={proj.livePreviewLink}/>
-        <MyLink iconId={"githublink"} linkText={"View Code"} link={proj.codeLink}/>
+        <MyLink iconId={"chain"} linkText={"Live Preview"} link={proj.livePreviewLink} margin={"0 0 25px 28px"}/>
+        <MyLink iconId={"githublink"} linkText={"View Code"} link={proj.codeLink} margin={"0 53px 25px 28px"}/>
       </FlexWrapper>
 
     </StyledCard>
   })
+
   return (
-    {projectsList}
+    <>
+      {projectsList}
+    </>
+
   );
 };
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import {MyButton} from 'src/components/button/Button';
-import {StyledDescription} from 'src/components/StyledDescription';
+import {StyledDescription} from 'src/components/description/StyledDescription';
 import {Header} from 'src/layout/header/Header';
 import styled from 'styled-components';
 import {FlexWrapper} from 'src/components/wrapper/FlexWrapper';
