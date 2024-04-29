@@ -20,5 +20,5 @@ export const Connect = () => {
 const StyledConnect = styled.div`
   background-color: rgba(0, 0, 0, 1);
   color: rgba(255, 255, 255, 1);
-
+  padding: 100px 125px
 `

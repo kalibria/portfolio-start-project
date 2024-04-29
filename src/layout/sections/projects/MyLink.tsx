@@ -32,6 +32,7 @@ const StyledMyLink = styled.div<StyledMyLinkPropsStyle>`
     font-size: 16px;
     font-weight: 400;
     color: rgba(255, 255, 255, 1);
+    text-decoration: underline;
   }
   
 

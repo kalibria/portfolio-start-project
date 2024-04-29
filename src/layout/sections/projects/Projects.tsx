@@ -10,9 +10,9 @@ export const Projects = () => {
   return (
     <StyledProjects>
       <FlexWrapper direction={"column"} justify={"center"} align={"center"}>
-        <SectionTitle marginTop={"100px"}>Projects</SectionTitle>
+        <SectionTitle>Projects</SectionTitle>
         <StyledDescription margitBottom={"100px"}>Things I’ve built so far</StyledDescription>
-        <GridWrapper columns={"1fr 1fr 1fr"} rows={"1fr 1rf"} rowGap={"65px"} columnGap={"48px"} marginBottom={"10px"}>
+        <GridWrapper columns={"1fr 1fr 1fr"} rows={"1fr 1rf"} rowGap={"65px"} columnGap={"48px"}>
           <Cards/>
         </GridWrapper>
       </FlexWrapper>
@@ -24,7 +24,5 @@ export const Projects = () => {
 const StyledProjects = styled.div`
   background-color: rgba(34, 42, 54, 1);
   color: rgba(255, 255, 255, 1);
-
-
-;
+  padding: 100px 125px;
 `

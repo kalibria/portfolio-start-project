@@ -9,6 +9,11 @@ import proj6 from 'src/assets/images/proj6.png'
 
 export const MENU_ITEMS = ['Home', 'Skills', 'Works', 'Contacts'];
 export const MY_SKILLS = ['figma', 'html5', 'css','sass', 'react'];
+export const SOCIAL_LINKS = [
+  {name: 'github', href: '#'},
+  {name: 'linkedin', href: '#'},
+  {name: 'telegram', href: '#'},
+]
 
 type ProjectPropsType = {
   id: number
