@@ -1,5 +1,6 @@
 import React from 'react';
 import {MyButton} from 'src/components/button/Button';
+import {StyledDescription} from 'src/components/StyledDescription';
 import {Header} from 'src/layout/header/Header';
 import styled from 'styled-components';
 import {FlexWrapper} from 'src/components/wrapper/FlexWrapper';
@@ -17,7 +18,7 @@ export const MainSection = () => {
           <MainSectionText>Hello!</MainSectionText>
           <MainSectionText>I’m Zarror Nibors</MainSectionText>
           <MainDescription>
-            <h1>I’am freelance <span> web developer</span> based in Indonesia who loves to craft attractive design experiences for the web.</h1>
+            <StyledDescription>I’am freelance <StyledTitle> web developer</StyledTitle> based in Indonesia who loves to craft attractive design experiences for the web.</StyledDescription>
             <ButtonsWrapper>
               <MyButton text={'Email me'} iconId={"envelope"} paddingTop={"20px"} paddingBottom={"20px"} paddingRight={"40px"} paddingLeft={"40px"} backgroundColor={"rgba(103, 108, 219, 1)"}/>
               <MyButton as="a" href="#" text={'Download CV'} iconId={"download"} paddingTop={"10px"} paddingBottom={"10px"} paddingRight={"20px"} paddingLeft={"20px"} backgroundColor={"transparent"} textDecoration={"underline"}/>
@@ -70,7 +71,16 @@ const MainSectionText =styled.span`
 const MainDescription = styled.section`
   max-width: 404px;
   min-height: 202px;
+  margin-top: 10px;
 `
 const ButtonsWrapper = styled.div`
   display: flex;
+  margin-top: 30px;
+`
+
+const StyledTitle = styled.h1`
+  display: inline;
+  color: rgba(255, 255, 255, 1);
+  font-size: 20px;
+  font-weight: 400;
 `
