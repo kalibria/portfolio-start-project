@@ -1,20 +1,19 @@
 import React from 'react';
 import {Icon} from 'src/components/icon/Icon';
 import {FlexWrapper} from 'src/components/wrapper/FlexWrapper';
+import {MY_SKILLS} from 'src/variables';
 import styled from 'styled-components';
 
 export const Skills = () => {
+  const listSkills = MY_SKILLS.map((skill) => {
+    return <Icon key={skill} iconId={skill} width={'100px'} height={"100px"}/>
+  })
   return (
     <StyledSkills>
       <FlexWrapper justify={"space-around"} align={"center"} grow={1}>
-        <Icon iconId={'css'} width={'100px'} height={"100px"}/>
-        <Icon iconId={'figma'} width={'100px'} height={"100px"}/>
-        <Icon iconId={'react'} width={'100px'} height={"100px"}/>
-        <Icon iconId={'sass'} width={'100px'} height={"100px"}/>
-        <Icon iconId={'html5'} width={'100px'} height={"100px"}/>
+        {listSkills}
       </FlexWrapper>
     </StyledSkills>
-
   );
 };
 

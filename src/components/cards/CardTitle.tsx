@@ -5,5 +5,5 @@ type CardTitlePropsType = {
 }
 
 export const CardTitle = ({title}: CardTitlePropsType) => {
-  return <h2>{title}</h2>
+  return <h3>{title}</h3>
 };
