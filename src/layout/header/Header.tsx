@@ -9,7 +9,7 @@ export const Header = () => {
     <StyledHeader>
       <Logo/>
       <Menu/>
-      <MyButton text={"Contact Me"} paddingTop={"10px"} paddingBottom={"10px"} paddingLeft={"20px"} paddingRight={"20px"}/>
+      <MyButton text={"Contact Me"} paddingTop={"10px"} paddingBottom={"10px"} paddingLeft={"20px"} paddingRight={"20px"} backgroundColor={"rgba(103, 108, 219, 1)"}/>
     </StyledHeader>
   )
 }

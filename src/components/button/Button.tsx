@@ -10,26 +10,35 @@ type MyButtonPropsStyle = {
   paddingBottom: string
   paddingRight: string
   paddingLeft: string
+  as?:string
+  href?:string
+  backgroundColor: string
+  textDecoration?: string
+
 }
 
-export const MyButton = ({iconId, text, paddingTop, paddingRight, paddingLeft, paddingBottom}: MyButtonPropsStyle) => {
+export const MyButton = ({iconId, text, paddingTop, paddingRight, paddingLeft, paddingBottom, as, href, backgroundColor, textDecoration}: MyButtonPropsStyle) => {
   return (
-      <StyledButton paddingRight={paddingRight} paddingLeft={paddingLeft} paddingBottom={paddingBottom} paddingTop={paddingTop}>{iconId &&  <Icon width={"20px"} height={"20px"} viewBox={"-3 -3 20 20"} iconId={iconId}/>} {text}</StyledButton>
+      <StyledButton paddingRight={paddingRight} paddingLeft={paddingLeft} paddingBottom={paddingBottom} paddingTop={paddingTop} backgroundColor={backgroundColor} textDecoration={textDecoration && textDecoration}>{iconId &&  <Icon width={"20px"} height={"20px"} viewBox={"-3 -3 20 20"} iconId={iconId} />} {text}</StyledButton>
   )
 }
+
+
 
 type StyledButtonPropsType = {
   paddingTop: string
   paddingBottom: string
   paddingRight: string
   paddingLeft: string
+  backgroundColor: string
+  textDecoration?: string
 }
 
 const StyledButton = styled.button<StyledButtonPropsType>`
-  background-color: rgba(103, 108, 219, 1);
+  background-color: ${props => props.backgroundColor};
   color: rgba(255, 255, 255, 1);
   font-weight: 500;
-  font-size: 20px;
+  font-size: 18px;
   padding-top: ${props => props.paddingTop};
   padding-bottom: ${props => props.paddingBottom};
   padding-right: ${props => props.paddingRight};
@@ -39,7 +48,9 @@ const StyledButton = styled.button<StyledButtonPropsType>`
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: nowrap;
   gap: 10px;
+  line-height: 24px;
+  text-decoration: ${props => props.textDecoration};
 `
-
 

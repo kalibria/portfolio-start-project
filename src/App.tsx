@@ -25,6 +25,7 @@ export default App;
 
 const StyledMain = styled.main`
   background-color: rgba(34, 42, 54, 0.95);
+  width: 100vw;
 `
 
 

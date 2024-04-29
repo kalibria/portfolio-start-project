@@ -3,7 +3,7 @@ import {MyButton} from 'src/components/button/Button';
 import {Header} from 'src/layout/header/Header';
 import styled from 'styled-components';
 import {FlexWrapper} from 'src/components/wrapper/FlexWrapper';
-// import myPhoto from '../../../assets/images/myphoto.webp';
+// import photo from '../../../assets/images/myphoto.webp';
 import photo from 'src/assets/images/photo.webp'
 
 export const MainSection = () => {
@@ -17,13 +17,11 @@ export const MainSection = () => {
           <MainSectionText>Hello!</MainSectionText>
           <MainSectionText>I’m Zarror Nibors</MainSectionText>
           <MainDescription>
-            <h1>I’am freelance web developer based in Indonesia who loves to craft attractive design experiences for the web.</h1>
+            <h1>I’am freelance <span> web developer</span> based in Indonesia who loves to craft attractive design experiences for the web.</h1>
             <ButtonsWrapper>
-              <MyButton text={'Email me'} iconId={"envelope"} paddingTop={"20px"} paddingBottom={"20px"} paddingRight={"40px"} paddingLeft={"40px"} />
-              <div>
-                <a href={'#'}>Download CV</a>
-              </div>
-            </ButtonsWrapper>
+              <MyButton text={'Email me'} iconId={"envelope"} paddingTop={"20px"} paddingBottom={"20px"} paddingRight={"40px"} paddingLeft={"40px"} backgroundColor={"rgba(103, 108, 219, 1)"}/>
+              <MyButton as="a" href="#" text={'Download CV'} iconId={"download"} paddingTop={"10px"} paddingBottom={"10px"} paddingRight={"20px"} paddingLeft={"20px"} backgroundColor={"transparent"} textDecoration={"underline"}/>
+            </ButtonsWrapper >
           </MainDescription>
         </FlexWrapper>
       </MainInfo>
@@ -45,15 +43,15 @@ const StyledMainSection = styled.section`
 type StyledBackgroundPropsType = {
   backgroundColor?: string
   backgroundImage?:string
-  // width: string
 }
 
 const StyledBackground = styled.div<StyledBackgroundPropsType>`
   background-color: ${props => props.backgroundColor};
   background-image: url(${props => props.backgroundImage});
-  object-fit: cover;
-  width: 50vw;
-  //width: 720px  ;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: 50%;
+  flex-basis: 50%;
   height: 743px;
 `
 const MainInfo = styled.section`
@@ -66,6 +64,7 @@ const MainSectionText =styled.span`
   font-family: "Playfair Display", sans-serif;
   font-weight: 700;
   font-size: 90px;
+  line-height: 108px;
 `
 
 const MainDescription = styled.section`
