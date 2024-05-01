@@ -6,8 +6,6 @@ type FlexWrapperPropsType = {
   align?: string
   wrap?: string
   grow?: number
-  backgroundColor?: string
-  minHeight?: string
 }
 
 export const FlexWrapper = styled.div<FlexWrapperPropsType>`
@@ -17,6 +15,4 @@ export const FlexWrapper = styled.div<FlexWrapperPropsType>`
   align-items: ${props => props.align || "stretch"};
   flex-wrap: ${props => props.wrap || "nowrap"};
   flex-grow: ${props => props.grow || 0};
-  background-color: ${props => props.backgroundColor};
-  min-height: ${props => props.minHeight};
 `
