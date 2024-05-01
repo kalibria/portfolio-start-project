@@ -1,10 +1,10 @@
+import {theme} from 'src/styles/Theme';
 import {createGlobalStyle} from 'styled-components';
 
 export const GlobalStyles = createGlobalStyle`
   body {
     font-family: "Poppins", sans-serif;
-    color: rgba(255, 255, 255, 1);
-
+    color: ${theme.colors.primaryTextColor};
   }
   
   *,
@@ -24,8 +24,12 @@ export const GlobalStyles = createGlobalStyle`
   
   a {
     text-decoration: none;
-    color: rgba(255, 255, 255, 1);
-
+    color: ${theme.colors.primaryTextColor};
+  }
+  
+  button {
+    background-color: unset;
+    border: none
   }
   
   
