@@ -5,6 +5,7 @@ export const GlobalStyles = createGlobalStyle`
   body {
     font-family: "Poppins", sans-serif;
     color: ${theme.colors.primaryTextColor};
+    line-height: 1.2;
   }
   
   *,
@@ -29,7 +30,8 @@ export const GlobalStyles = createGlobalStyle`
   
   button {
     background-color: unset;
-    border: none
+    border: none;
+    cursor:pointer
   }
   
   section:nth-of-type(odd){

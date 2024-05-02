@@ -6,10 +6,7 @@ import styled from 'styled-components';
 type MyButtonPropsStyle = {
   iconId?: string
   text: string
-  paddingTop: string
-  paddingBottom: string
-  paddingRight: string
-  paddingLeft: string
+  padding: string
   as?:string
   href?:string
   backgroundColor: string
@@ -17,19 +14,16 @@ type MyButtonPropsStyle = {
 
 }
 
-export const MyButton = ({iconId, text, paddingTop, paddingRight, paddingLeft, paddingBottom, as, href, backgroundColor, textDecoration}: MyButtonPropsStyle) => {
+export const MyButton = ({iconId, text, padding, as, href, backgroundColor, textDecoration}: MyButtonPropsStyle) => {
   return (
-      <StyledButton paddingRight={paddingRight} paddingLeft={paddingLeft} paddingBottom={paddingBottom} paddingTop={paddingTop} backgroundColor={backgroundColor} textDecoration={textDecoration && textDecoration}>{iconId &&  <Icon width={"20px"} height={"20px"} viewBox={"-3 -3 20 20"} iconId={iconId} />} {text}</StyledButton>
+      <StyledButton padding={padding} backgroundColor={backgroundColor} textDecoration={textDecoration && textDecoration}>{iconId &&  <Icon width={"20px"} height={"20px"} viewBox={"-3 -3 20 20"} iconId={iconId} />} {text}</StyledButton>
   )
 }
 
 
 
 type StyledButtonPropsType = {
-  paddingTop: string
-  paddingBottom: string
-  paddingRight: string
-  paddingLeft: string
+  padding: string
   backgroundColor: string
   textDecoration?: string
 }
@@ -39,10 +33,7 @@ const StyledButton = styled.button<StyledButtonPropsType>`
   color: rgba(255, 255, 255, 1);
   font-weight: 500;
   font-size: 18px;
-  padding-top: ${props => props.paddingTop};
-  padding-bottom: ${props => props.paddingBottom};
-  padding-right: ${props => props.paddingRight};
-  padding-left: ${props => props.paddingLeft};
+  padding: ${props => props.padding};
   border: none;
   font-family: "Poppins", sans-serif;
   display: flex;

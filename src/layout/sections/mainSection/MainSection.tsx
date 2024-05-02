@@ -23,8 +23,8 @@ export const MainSection = () => {
             <MainDescription>
               <StyledDescription>I’am freelance <StyledTitle> web developer</StyledTitle> based in Indonesia who loves to craft attractive design experiences for the web.</StyledDescription>
               <ButtonsWrapper>
-                <MyButton text={'Email me'} iconId={"envelope"} paddingTop={"20px"} paddingBottom={"20px"} paddingRight={"40px"} paddingLeft={"40px"} backgroundColor={"rgba(103, 108, 219, 1)"}/>
-                <MyButton as="a" href="#" text={'Download CV'} iconId={"download"} paddingTop={"10px"} paddingBottom={"10px"} paddingRight={"20px"} paddingLeft={"20px"} backgroundColor={"transparent"} textDecoration={"underline"}/>
+                <MyButton text={'Email me'} iconId={"envelope"} padding={"20px 40px"} backgroundColor={"rgba(103, 108, 219, 1)"}/>
+                <MyButton as="a" href="#" text={'Download CV'} iconId={"download"} padding={"10px 20px"} backgroundColor={"transparent"} textDecoration={"underline"}/>
               </ButtonsWrapper >
             </MainDescription>
           </FlexWrapper>
@@ -69,7 +69,6 @@ const MainSectionText =styled.span`
   font-family: "Playfair Display", sans-serif;
   font-weight: 700;
   font-size: 90px;
-  line-height: 108px;
 `
 
 const MainDescription = styled.section`
