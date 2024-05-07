@@ -68,6 +68,7 @@ const LinkItem = styled.li`
   &:hover {
     &::before {
       transform: scale(1);
+        cursor: pointer;
     }
     
     ${Mask}{
