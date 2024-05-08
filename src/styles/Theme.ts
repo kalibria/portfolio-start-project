@@ -6,5 +6,9 @@ export const theme = {
 
     primaryTextColor: 'rgba(255, 255, 255, 1)',
     secondaryTextColor: 'rgba(255, 255, 255, 0.5)'
- }
+ },
+  media: {
+    tablet: "screen and (max-width: 768px)",
+    mobile: "screen and (max-width: 576px)",
+  }
 }

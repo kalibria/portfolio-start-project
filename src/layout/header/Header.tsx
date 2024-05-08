@@ -1,22 +1,13 @@
 import React from 'react';
-import {MyButton} from 'src/components/button/Button';
-import {Container} from 'src/components/container/Container';
-import {FlexWrapper} from 'src/components/wrapper/FlexWrapper';
 import styled from 'styled-components';
-import {HeaderMenu} from 'src/layout/header/headerMenu/HeaderMenu';
-import {Logo} from 'src/components/logo/Logo';
+import {MobileMenu} from "./mobileMenu/MobileMenu";
+import {DesktopMenu} from "./desktopMenu/DesktopMenu";
 
 export const Header = () => {
   return (
     <StyledHeader>
-      <Container>
-        <FlexWrapper justify={'space-between'} align={'center'} >
-          <Logo/>
-          <HeaderMenu/>
-          <MyButton text={"Contact Me"} padding={"10px 20px"} backgroundColor={"rgba(103, 108, 219, 1)"}/>
-        </FlexWrapper>
-      </Container>
-
+        <DesktopMenu/>
+        <MobileMenu/>
     </StyledHeader>
   )
 }
