@@ -15,10 +15,10 @@ const listItems = MENU_ITEMS.map((item)=>{
   return (
       <StyledMobileMenu>
           <Logo/>
-          <BurgerButton isOpen={true}>
+          <BurgerButton isOpen={false}>
               <span/>
           </BurgerButton>
-          <MobilePopup isOpen={true}>
+          <MobilePopup isOpen={false}>
               <StyledMenu>
                   <ul>
                       {listItems}

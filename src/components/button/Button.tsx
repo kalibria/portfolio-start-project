@@ -1,6 +1,7 @@
 import React from 'react';
 import {Icon} from 'src/components/icon/Icon';
 import styled from 'styled-components';
+import {font} from "../../styles/Common";
 
 
 type MyButtonPropsStyle = {
@@ -30,18 +31,15 @@ type StyledButtonPropsType = {
 
 const StyledButton = styled.button<StyledButtonPropsType>`
   background-color: ${props => props.backgroundColor};
-  color: rgba(255, 255, 255, 1);
-  font-weight: 500;
-  font-size: 18px;
   padding: ${props => props.padding};
   border: none;
-  font-family: "Poppins", sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
   gap: 10px;
-  line-height: 24px;
   text-decoration: ${props => props.textDecoration};
+
+  ${font({weight: 500, Fmax: 18, Fmin: 16}  )}
 `
 

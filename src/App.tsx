@@ -11,11 +11,11 @@ import {Header} from './layout/header/Header';
 function App() {
     return (
         <StyledMain className="App">
-          {/*<Header/>*/}
+          <Header/>
           <MainSection/>
           <Skills/>
           <Projects/>
-          <Connect/>
+          {/*<Connect/>*/}
           <Footer/>
         </StyledMain>
     );

@@ -22,11 +22,8 @@ export const DesktopMenu = () => {
     );
 };
 
-const StyledDesktopMenu = styled.section`
+const StyledDesktopMenu = styled.div`
     @media ${theme.media.tablet}{
-        display: none;
-    }
-    @media ${theme.media.mobile}{
         display: none;
     }
 `
