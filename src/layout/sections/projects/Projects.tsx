@@ -4,12 +4,11 @@ import {Container} from 'src/components/container/Container';
 import {StyledDescription} from 'src/components/description/StyledDescription';
 import {SectionTitle} from 'src/components/sectionTitle/SectionTitle';
 import {FlexWrapper} from 'src/components/wrapper/FlexWrapper';
-import styled from 'styled-components';
-import {theme} from "../../../styles/Theme";
+import {S} from './Projects_Styles'
 
-export const Projects = () => {
+export const Projects: React.FC = () => {
   return (
-    <StyledProjects>
+    <S.Projects>
       <Container>
         <FlexWrapper direction={"column"} justify={"center"} align={"center"}>
           <SectionTitle>Projects</SectionTitle>
@@ -17,16 +16,8 @@ export const Projects = () => {
           <Cards/>
         </FlexWrapper>
       </Container>
-    </StyledProjects>
+    </S.Projects>
   );
 };
 
 
-const StyledProjects = styled.div`
-  width: 100%;
-  padding: 100px 0;
-  
-  @media ${theme.media.mobile} {
-    padding: 60px 0;
-  }
-`

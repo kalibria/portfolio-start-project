@@ -1,28 +1,16 @@
-import styled from 'styled-components';
-import {theme} from "../../styles/Theme";
+import {S} from './Footer_Styles'
+import React from "react";
 
-export const Footer = () => {
+export const Footer:React.FC = () => {
   const startYear = 2024;
   const currentYear = new Date().getFullYear();
 
   return (
-    <StyledFooter>
+    <S.Footer>
       <p>Created by <span>Maria Kushlianskaya</span></p>
       <span>&copy; {startYear === currentYear ? startYear : `${startYear} - ${currentYear}`}</span>
-    </StyledFooter>
+    </S.Footer>
   );
 };
 
-const StyledFooter = styled.footer`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(0, 0, 0, 1);
-  color: rgba(255, 255, 255, 0.5);
-  padding-bottom: 50px; 
-    
-  @media ${theme.media.mobile} {
-      padding-bottom: 30px;
-  }
-`
+

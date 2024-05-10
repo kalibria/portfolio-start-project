@@ -8,7 +8,7 @@ import {FlexWrapper} from 'src/components/wrapper/FlexWrapper';
 import photo from 'src/assets/images/photo.webp'
 import {S} from './MainSection_Styled'
 
-export const MainSection = () => {
+export const MainSection:React.FC = () => {
   return (
     <S.MainSection>
       <S.Background backgroundColor={theme.colors.primaryColor}/>
