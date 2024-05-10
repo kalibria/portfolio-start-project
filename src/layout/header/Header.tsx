@@ -1,27 +1,30 @@
-import React from 'react';
-import styled from 'styled-components';
-import {MobileMenu} from "./mobileMenu/MobileMenu";
-import {DesktopMenu} from "./desktopMenu/DesktopMenu";
+import React, {useEffect, useState} from 'react';
+import {S} from "./Header_styles";
+import {MobileMenu} from "./headerMenu/mobileMenu/MobileMenu";
+import {DesktopMenu} from "./headerMenu/desktopMenu/DesktopMenu";
+import {Logo} from "../../components/logo/Logo";
+import {Container} from "../../components/container/Container";
 
-export const Header = () => {
-  return (
-    <StyledHeader>
-        <DesktopMenu/>
-        <MobileMenu/>
-    </StyledHeader>
-  )
+export const Header: React.FC = () => {
+    const [width, setWidth] = useState(window.innerWidth);
+    const breakpoint = 800;
+
+    useEffect (() => {
+        const handleWindowResize = () => setWidth(window.innerWidth);
+        window.addEventListener("resize",() => setWidth(window.innerWidth));
+        return () => window.removeEventListener("resize", handleWindowResize);
+    },[])
+
+    return (
+        <S.Header>
+            <Container>
+                <S.MenuWrapper>
+                    <Logo/>
+                    {width < breakpoint ? <MobileMenu/> : <DesktopMenu/>}
+                </S.MenuWrapper>
+            </Container>
+        </S.Header>
+    )
 }
 
-
-const StyledHeader = styled.header`
-  width: 100%;
-  background-color: transparent;
-  padding: 20px 0;
-  
-  position: fixed;
-  top:0;
-  left: 0;
-  right: 0;
-  z-index: 999;
-`
 
