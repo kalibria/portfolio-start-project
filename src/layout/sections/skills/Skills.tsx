@@ -12,7 +12,7 @@ export const Skills = () => {
   return (
     <SkillsSection>
       <Container>
-        <FlexWrapper justify={"space-around"} align={"center"} grow={1}>
+        <FlexWrapper justify={"space-between"} align={"center"} grow={1}>
           {listSkills}
         </FlexWrapper>
       </Container>

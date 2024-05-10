@@ -22,7 +22,7 @@ export const MainSection = () => {
             <MainDescription>
               <StyledDescription>I’am freelance <StyledTitle> web developer</StyledTitle> based in Indonesia who loves to craft attractive design experiences for the web.</StyledDescription>
               <ButtonsWrapper>
-                <MyButton text={'Email me'} iconId={"envelope"} padding={"20px 40px"} backgroundColor={"rgba(103, 108, 219, 1)"}/>
+                <MyButton text={'Email me'} iconId={"envelope"} padding={"20px 43px"} backgroundColor={"rgba(103, 108, 219, 1)"}/>
                 <MyButton as="a" href="#" text={'Download CV'} iconId={"download"} padding={"10px 20px"} backgroundColor={"transparent"} textDecoration={"underline"}/>
               </ButtonsWrapper >
             </MainDescription>
