@@ -1,10 +1,11 @@
 import styled from 'styled-components';
+import {font} from "../../styles/Common";
+import {theme} from "../../styles/Theme";
 
 export const CardTitle = styled.h3`
-  font-size: 28px;
-  font-weight: 500;
+    
+  font-size:  ${font({weight: 500, Fmax: 28, Fmin: 24, color: theme.colors.primaryTextColor}  )}
   line-height: 26px;
-  color: rgba(204, 204, 204, 1);
   text-align: center;
   margin-top: 27px;
   margin-bottom: 17px;

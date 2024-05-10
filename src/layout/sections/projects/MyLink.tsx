@@ -6,24 +6,19 @@ type MyLinkPropsType = {
   iconId: string
   linkText: string
   link: string
-  margin?: string
 }
 
-export const MyLink = ({iconId, linkText, link, margin}: MyLinkPropsType) => {
+export const MyLink = ({iconId, linkText, link}: MyLinkPropsType) => {
   return (
-    <StyledMyLink margin={margin}>
+    <StyledMyLink>
       <Icon iconId={iconId} width={'20px'} height={'20px'} viewBox={"0 0 20 20"}/>
       <a href={link}>{linkText}</a>
     </StyledMyLink>
 
   );
 };
-type StyledMyLinkPropsStyle = {
-  margin?: string
-}
 
-const StyledMyLink = styled.div<StyledMyLinkPropsStyle>`
-  margin: ${props => props.margin};
+const StyledMyLink = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;

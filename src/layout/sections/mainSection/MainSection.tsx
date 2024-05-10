@@ -80,7 +80,7 @@ const MainSectionText =styled.span`
   ${font({family: "Playfair Display", weight: 700, Fmax: 90, Fmin: 50}  )}
 `
 
-const MainDescription = styled.section`
+const MainDescription = styled.div`
   max-width: 404px;
   min-height: 202px;
   margin-top: 10px;

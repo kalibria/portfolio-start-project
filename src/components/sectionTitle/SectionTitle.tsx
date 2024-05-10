@@ -1,4 +1,6 @@
 import styled from 'styled-components';
+import {font} from "../../styles/Common";
+import {theme} from "../../styles/Theme";
 
 type SectionTitleStyleProps = {
   marginTop?: string
@@ -6,10 +8,9 @@ type SectionTitleStyleProps = {
 }
 
 export const SectionTitle = styled.h2<SectionTitleStyleProps>`
-  font-size: 40px;
-  font-weight: 700;
+  font-size: ${font({weight: 700, Fmax: 40, Fmin: 36, color: theme.colors.primaryTextColor}  )};
   line-height: 72px;
-  color: rgba(255, 255, 255, 1);
   margin-top: ${props => props.marginTop};
   margin-bottom: ${props => props.marginBottom};
+  
 `
