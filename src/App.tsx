@@ -15,7 +15,7 @@ function App() {
           <MainSection/>
           <Skills/>
           <Projects/>
-          {/*<Connect/>*/}
+          <Connect/>
           <Footer/>
         </StyledMain>
     );

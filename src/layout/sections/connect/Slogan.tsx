@@ -1,6 +1,8 @@
 import React from 'react';
 import {SocialLinks} from 'src/layout/sections/connect/SocialLinks';
 import styled from 'styled-components';
+import {font} from "../../../styles/Common";
+import {theme} from "../../../styles/Theme";
 
 export const Slogan = () => {
   return (
@@ -12,13 +14,18 @@ export const Slogan = () => {
 };
 
 const StyledTitle = styled.h2`
-  font-size: 100px;
-  font-weight: 700;
-  line-height: 120px;
-  color: rgba(255, 255, 255, 1);
-  margin-bottom: 31px;
+    font-size: ${font({weight: 700, Fmax: 100, Fmin: 50, color: theme.colors.primaryTextColor})};
+    margin-bottom: 30px;
+
+    @media ${theme.media.mobile} {
+        margin-bottom: 60px;
+    }
 `
 
 const StyledSlogan = styled.div`
-  max-width: 438px;
+    max-width: 438px;
+
+    @media ${theme.media.mobile} {
+        margin-bottom: 90px;
+    }
 `

@@ -2,6 +2,8 @@ import React from 'react';
 import {Input} from 'src/components/form/Input';
 import {Icon} from 'src/components/icon/Icon';
 import styled from 'styled-components';
+import {font} from "../../styles/Common";
+
 
 export const Form = () => {
   return (
@@ -16,8 +18,13 @@ export const Form = () => {
 
 
 const StyledForm = styled.form`
-  display: flex;
-  flex-direction: column;
+    max-width: 500px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+
+    ${font({Fmax: 30, Fmin: 22})} 
+    
 `
 
 

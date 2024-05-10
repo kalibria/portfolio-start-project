@@ -1,19 +1,19 @@
 import React from 'react';
 import {Container} from 'src/components/container/Container';
 import {Form} from 'src/components/form/Form';
-import {GridWrapper} from 'src/components/wrapper/GridWrapper';
 import {theme} from 'src/styles/Theme';
 import styled from 'styled-components';
 import { Slogan } from 'src/layout/sections/connect/Slogan';
+import {FlexWrapper} from "../../../components/wrapper/FlexWrapper";
 
 export const Connect = () => {
   return (
     <StyledConnect>
       <Container>
-        <GridWrapper columns={"1fr 1fr"} rows={"1fr"} >
-          <Slogan/>
-          <Form/>
-        </GridWrapper>
+          <FlexWrapper justify={'space-between'} wrap={'wrap'} gap={"20px"}>
+              <Slogan/>
+              <Form/>
+          </FlexWrapper>
       </Container>
     </StyledConnect>
 
@@ -22,6 +22,10 @@ export const Connect = () => {
 
 
 const StyledConnect = styled.div`
-  padding: 100px 0;
-  background-color: ${theme.colors.secondaryColor};
+    padding: 100px 0;
+    background-color: ${theme.colors.secondaryColor};
+    
+    @media ${theme.media.mobile} {
+        padding: 60px 0;
+    }
 `
