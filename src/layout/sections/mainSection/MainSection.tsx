@@ -10,7 +10,7 @@ import {S} from './MainSection_Styled'
 
 export const MainSection:React.FC = () => {
   return (
-    <S.MainSection>
+    <S.MainSection id={"home"}>
       <S.Background backgroundColor={theme.colors.primaryColor}/>
       <S.Background backgroundImage={photo}/>
       <S.MainInfo>

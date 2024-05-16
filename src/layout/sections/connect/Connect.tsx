@@ -7,7 +7,7 @@ import {S} from './Connect_Styles'
 
 export const Connect:React.FC = () => {
   return (
-    <S.Connect>
+    <S.Connect id={"contacts"}>
       <Container>
           <FlexWrapper justify={'space-between'} wrap={'wrap'} gap={"20px"}>
               <Slogan/>

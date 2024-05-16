@@ -1,6 +1,6 @@
 import React from 'react';
 import {Icon} from 'src/components/icon/Icon';
-import {SOCIAL_LINKS} from 'src/variables';
+import {SOCIAL_LINKS} from 'src/variables/variables';
 import {S} from './Connect_Styles'
 
 export const SocialLinks:React.FC = () => {

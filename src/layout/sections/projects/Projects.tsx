@@ -8,7 +8,7 @@ import {S} from './Projects_Styles'
 
 export const Projects: React.FC = () => {
   return (
-    <S.Projects>
+    <S.Projects id={"works"}>
       <Container>
         <FlexWrapper direction={"column"} justify={"center"} align={"center"}>
           <SectionTitle>Projects</SectionTitle>

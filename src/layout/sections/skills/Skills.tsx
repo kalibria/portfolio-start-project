@@ -2,7 +2,7 @@ import React from 'react';
 import {Container} from 'src/components/container/Container';
 import {Icon} from 'src/components/icon/Icon';
 import {FlexWrapper} from 'src/components/wrapper/FlexWrapper';
-import {MY_SKILLS} from 'src/variables';
+import {MY_SKILLS} from 'src/variables/variables';
 import {S} from './Skills_Styles'
 
 export const Skills = () => {
@@ -10,7 +10,7 @@ export const Skills = () => {
     return <Icon key={skill} iconId={skill} width={'100px'} height={"100px"}/>
   })
   return (
-    <S.SkillsSection>
+    <S.SkillsSection id={"skills"}>
       <Container>
         <FlexWrapper justify={"space-between"} align={"center"} grow={1}>
           {listSkills}
