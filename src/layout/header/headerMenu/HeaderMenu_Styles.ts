@@ -28,9 +28,10 @@ const NavLink = styled(Link)`
 
     &:hover, &.active {
         &::after {
-            height: 5px;
+            height: 6px;
             width: 100%;
             background-color: ${theme.colors.accentColor};
+            z-index: -3;
             
             position: absolute;
             bottom: 3px;

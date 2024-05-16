@@ -6,17 +6,19 @@ import {Projects} from 'src/layout/sections/projects/Projects';
 import styled from 'styled-components';
 import {Skills} from './layout/sections/skills/Skills';
 import {Header} from './layout/header/Header';
+import {GoTopBtn} from "./goTopBtn/GoTopBtn";
 
 
 function App() {
     return (
         <StyledMain className="App">
-          <Header/>
-          <MainSection/>
-          <Skills/>
-          <Projects/>
-          <Connect/>
-          <Footer/>
+            <Header/>
+            <MainSection/>
+            <Skills/>
+            <Projects/>
+            <Connect/>
+            <Footer/>
+            <GoTopBtn/>
         </StyledMain>
     );
 }
@@ -24,8 +26,8 @@ function App() {
 export default App;
 
 const StyledMain = styled.main`
-  background-color: rgba(34, 42, 54, 0.95);
-  width: 100vw;
+    background-color: rgba(34, 42, 54, 0.95);
+    width: 100vw;
 `
 
 
