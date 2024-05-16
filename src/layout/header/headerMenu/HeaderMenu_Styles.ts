@@ -24,6 +24,7 @@ const NavLink = styled(Link)`
         content: "";
         display: inline-block;
         width: 0;
+        height: 0;
     }
 
     &:hover, &.active {
@@ -37,7 +38,7 @@ const NavLink = styled(Link)`
             bottom: 3px;
             left: 0;
             
-            transition: width 0.5s linear;
+            transition:width ${theme.animation.transition}
         }
     }
     
@@ -49,7 +50,7 @@ const DesktopMenu = styled.div`
 `
 
 const MobileMenu = styled.div`
-
+  
 `
 
 const BurgerButton = styled.button<{ isOpen: boolean }>`
@@ -110,7 +111,16 @@ const MobilePopup = styled.div<{ isOpen: boolean }>`
 
     background-color: rgba(45, 53, 64, 1);
     z-index: 99;
-    display: none;;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 170px;
+    
+    transform: translateY(-100%);
+    transition: .8s ease-in-out;
+    
 
     ul {
         display: flex;
@@ -119,11 +129,7 @@ const MobilePopup = styled.div<{ isOpen: boolean }>`
     }
 
     ${props => props.isOpen && css<{ isOpen: boolean }>`
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 170px
+        transform: translateY(0);
     `}
 `
 
@@ -139,7 +145,6 @@ const StyledMenu = styled.nav`
 export const S = {
     Menu,
     NavLink,
-    // Mask,
     LinkItem,
     DesktopMenu,
     MobileMenu,
