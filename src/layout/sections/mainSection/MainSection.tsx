@@ -8,6 +8,9 @@ import {FlexWrapper} from 'src/components/wrapper/FlexWrapper';
 import photo from 'src/assets/images/photo.webp'
 import {S} from './MainSection_Styled'
 import {ModalWindow} from "../../../components/modalWindow/ModalWindow";
+import Typewriter from 'typewriter-effect';
+import {Simulate} from "react-dom/test-utils";
+import pause = Simulate.pause;
 
 export const MainSection: React.FC = () => {
     const [isOpenModalWindow, setIsOpenModalWindow] = React.useState(false);
@@ -22,8 +25,31 @@ export const MainSection: React.FC = () => {
             <S.MainInfo>
                 <Container>
                     <FlexWrapper direction={'column'}>
-                        <S.MainSectionText>Hello!</S.MainSectionText>
-                        <S.MainSectionText>I’m Zarror Nibors</S.MainSectionText>
+                        <S.MainSectionText><Typewriter
+                            options={{
+                                autoStart: true,
+                                cursor: ""
+                            }}
+                            onInit={(typewriter) => {
+                                typewriter.typeString('Hello!')
+                                    .start()
+                            }}
+                        />
+                        </S.MainSectionText>
+                        <S.MainSectionText>
+                            <Typewriter
+                                options={{
+                                    autoStart: true,
+                                    cursor: "",
+                                }}
+                                onInit={(typewriter) => {
+                                    typewriter.pauseFor(2000)
+                                        .typeString('I’m Zarror Nibors')
+
+                                        .start()
+                                }}
+                            />
+                        </S.MainSectionText>
                         <S.MainDescription>
                             <StyledDescription>I’am freelance <S.Title> web developer</S.Title> based in Indonesia who
                                 loves to craft attractive design experiences for the web.</StyledDescription>
@@ -32,8 +58,8 @@ export const MainSection: React.FC = () => {
                                           backgroundColor={"rgba(103, 108, 219, 1)"} onClick={openModalWindow}/>
                                 <MyButton as="a" href="#" text={'Download CV'} iconId={"download"} padding={"10px 20px"}
                                           backgroundColor={"transparent"} textDecoration={"underline"}/>
-                                <ModalWindow isOpen={isOpenModalWindow} setIsOpen={setIsOpenModalWindow}/>
                             </S.ButtonsWrapper>
+                            <ModalWindow isOpen={isOpenModalWindow} setIsOpen={setIsOpenModalWindow}/>
                         </S.MainDescription>
                     </FlexWrapper>
                 </Container>
