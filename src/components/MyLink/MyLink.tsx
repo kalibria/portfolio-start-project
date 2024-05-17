@@ -1,6 +1,7 @@
 import React from 'react';
 import {Icon} from 'src/components/icon/Icon';
-import {S} from './Projects_Styles'
+import {S} from './MyLink_Styles'
+
 
 type MyLinkPropsType = {
   iconId: string
@@ -12,9 +13,11 @@ export const MyLink: React.FC <MyLinkPropsType> = ({iconId, linkText, link}: MyL
   return (
     <S.MyLink>
       <Icon iconId={iconId} width={'20px'} height={'20px'} viewBox={"0 0 20 20"}/>
-      <a href={link}>{linkText}</a>
+      <a href={link} target="blank">{linkText}</a>
     </S.MyLink>
 
   );
 };
+
+
 

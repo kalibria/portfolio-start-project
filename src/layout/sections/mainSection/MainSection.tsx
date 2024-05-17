@@ -9,6 +9,7 @@ import photo from '../../../assets/images/myphoto.webp';
 import {S} from './MainSection_Styled'
 import {ModalWindow} from "../../../components/modalWindow/ModalWindow";
 import Typewriter from 'typewriter-effect';
+import {MyLink} from "../../../components/MyLink/MyLink";
 
 
 
@@ -68,8 +69,7 @@ export const MainSection: React.FC = () => {
                             <S.ButtonsWrapper>
                                 <MyButton text={'Email me'} iconId={"envelope"} padding={"20px 43px"}
                                           backgroundColor={"rgba(103, 108, 219, 1)"} onClick={openModalWindow}/>
-                                <MyButton as="a" href="https://www.kalibria.online/ru/resume" text={'See my CV'} iconId={"download"} padding={"10px 20px"}
-                                          backgroundColor={"transparent"} textDecoration={"underline"}/>
+                                <MyLink iconId={"download"} linkText={'See my CV'} link={"https://www.kalibria.online/ru/resume"}/>
                             </S.ButtonsWrapper>
                             <ModalWindow isOpen={isOpenModalWindow} setIsOpen={setIsOpenModalWindow}/>
                         </S.MainDescription>

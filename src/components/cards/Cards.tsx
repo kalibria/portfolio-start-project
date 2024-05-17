@@ -3,7 +3,7 @@ import {MyButton} from 'src/components/button/Button';
 import {theme} from 'src/styles/Theme';
 import {PROJECTS} from 'src/variables/variables';
 import {FlexWrapper} from 'src/components/wrapper/FlexWrapper';
-import {MyLink} from 'src/layout/sections/projects/MyLink';
+import {MyLink} from 'src/components/MyLink/MyLink';
 import {S} from './Cards_Styles'
 
 
