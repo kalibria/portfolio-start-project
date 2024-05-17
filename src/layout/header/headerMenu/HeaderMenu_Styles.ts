@@ -142,6 +142,28 @@ const StyledMenu = styled.nav`
     }
 `
 
+const ModalWindow = styled.div<{isOpen:boolean}>`
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0 0 0 / 0.8);
+    transform: translateY(-100%);
+    transition: .8s ease-in-out;
+    z-index: 99999999;
+    padding: 10px;
+    
+    ${props => props.isOpen && css<{isOpen: boolean}>`
+        transform: translateY(0);
+    `}
+`
+
 export const S = {
     Menu,
     NavLink,
@@ -150,5 +172,6 @@ export const S = {
     MobileMenu,
     BurgerButton,
     MobilePopup,
-    StyledMenu
+    StyledMenu,
+    ModalWindow
 }
