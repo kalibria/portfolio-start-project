@@ -4,9 +4,11 @@ import {Icon} from 'src/components/icon/Icon';
 import {S} from './Form_Styles'
 import emailjs from "@emailjs/browser";
 
+type Props = {
+    id?:string
+}
 
-
-export const Form:React.FC = () => {
+export const Form:React.FC<Props> = (props) => {
     const form = useRef<ElementRef<'form'>>(null);
 
     const sendEmail = (e: any) => {
@@ -29,7 +31,7 @@ export const Form:React.FC = () => {
         e.target.reset()
     };
     return (
-    <S.Form ref={form} onSubmit={sendEmail}>
+    <S.Form ref={form} onSubmit={sendEmail} id={props.id}>
       <Input required labelText={"Your name:"} type={"text"} name={"user_name"}/>
       <Input required labelText={"Your email  address:"} type={"email"} name={"email"}/>
       <Input required labelText={"Tell about the project:"} type={"text"} name={"message"}/>
