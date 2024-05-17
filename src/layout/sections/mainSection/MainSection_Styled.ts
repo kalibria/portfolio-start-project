@@ -40,7 +40,7 @@ const Background = styled.div<StyledBackgroundPropsType>`
 const MainInfo = styled.div`
   width: 100%;
   position: absolute;
-  top:175px;
+  top:125px;
   
   @media ${theme.media.mobile} {
     top: 510px

@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import {S} from '../HeaderMenu_Styles'
 import {MyButton} from "../../../../components/button/Button";
 import {Menu} from "../menu/Menu";
@@ -7,13 +7,29 @@ import {ModalWindow} from "../../../../components/modalWindow/ModalWindow";
 
 export const MobileMenu: React.FC = () => {
     const [isOpen, setIsOpen] = useState(false)
-    const [isOpenModalWindow, setIsOpenModalWindow] = useState(false)
+    const [isOpenModalWindow, setIsOpenModalWindow] = useState(false);
+    const [isClickLink, setIsClickLink] = useState(false);
+
+    const handleClickLink =() =>{
+        setIsClickLink(true)
+    }
+
+    useEffect(() => {
+        if(!isOpen){
+            setIsClickLink(false)
+        }
+    }, [isOpen]);
+
+    useEffect(() => {
+        if(isClickLink){
+            setIsOpen(false)
+        }
+    }, [isClickLink]);
 
     const onClickButton = () => {
         setIsOpen(!isOpen)
     }
     const onClickContactButton = () => {
-        console.log("contact")
         setIsOpenModalWindow(true)
     }
 
@@ -31,7 +47,7 @@ export const MobileMenu: React.FC = () => {
           </S.BurgerButton>
           <S.MobilePopup isOpen={isOpen} onClick = {(event) => closePopup(event)}>
                   <S.StyledMenu >
-                      <Menu/>
+                      <Menu handleClick={handleClickLink}/>
                   </S.StyledMenu>
                   <MyButton text={"Contact Me"} padding={"10px 20px"} backgroundColor={"rgba(103, 108, 219, 1)"} onClick={onClickContactButton} id="button"/>
           </S.MobilePopup>

@@ -45,7 +45,7 @@ const Input = styled.input`
     padding: 15px;
     outline: none;
 
-    &:focus-visible {
+    &:focus-visible, &:active {
         border-color: ${theme.colors.accentColor}
     }
 `
