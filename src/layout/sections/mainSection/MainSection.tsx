@@ -45,7 +45,7 @@ export const MainSection: React.FC = () => {
                                 }}
                                 onInit={(typewriter) => {
                                     typewriter.pauseFor(2000)
-                                        .typeString('I’m Maria')
+                                        .typeString('I’m Mariya')
                                         .start()
                                 }}
                             />
@@ -64,12 +64,13 @@ export const MainSection: React.FC = () => {
                             />
                         </S.MainSectionText>
                         <S.MainDescription>
-                            <StyledDescription>I’am freelance <S.Title> web developer</S.Title> who
-                                loves to craft attractive design experiences for the web.</StyledDescription>
+                            <StyledDescription>I’am <S.Title> web developer</S.Title> who
+                                implements any requests from creating responsive websites to developing user-friendly applications</StyledDescription>
                             <S.ButtonsWrapper>
                                 <MyButton text={'Email me'} iconId={"envelope"} padding={"20px 43px"}
                                           backgroundColor={"rgba(103, 108, 219, 1)"} onClick={openModalWindow}/>
-                                <MyLink iconId={"download"} linkText={'See my CV'} link={"https://www.kalibria.online/ru/resume"}/>
+                                <MyLink iconId={"download"} linkText={'See my CV'}
+                                        link={"https://kalibria.tech/en/resume"}/>
                             </S.ButtonsWrapper>
                             <ModalWindow isOpen={isOpenModalWindow} setIsOpen={setIsOpenModalWindow}/>
                         </S.MainDescription>
@@ -80,3 +81,4 @@ export const MainSection: React.FC = () => {
         </S.MainSection>
     );
 };
+

@@ -24,11 +24,11 @@ export const MENU_ITEMS = [
         href: "contacts"
     }
 ];
-export const MY_SKILLS = ['figma', 'html5', 'css', 'sass', 'react'];
+export const MY_SKILLS = ['figma', 'html5', 'css', 'sass', 'react', 'js'];
 export const SOCIAL_LINKS = [
-    {name: 'github', href: '#'},
-    {name: 'linkedin', href: '#'},
-    {name: 'telegram', href: '#'},
+    {name: 'github', href: 'https://github.com/kalibria'},
+    {name: 'linkedin', href: 'https://www.linkedin.com/in/maria-kushlianskaya-228b3889/'},
+    {name: 'telegram', href: 'https://t.me/@mariya_kalib'},
 ]
 
 type ProjectPropsType = {
