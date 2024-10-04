@@ -24,7 +24,7 @@ export const MENU_ITEMS = [
         href: "contacts"
     }
 ];
-export const MY_SKILLS = ['figma', 'html5', 'css', 'sass', 'react', 'js'];
+export const MY_SKILLS = ['js', 'html5', 'css', 'ts', 'react', 'redux', 'next', 'jest', 'figma', 'sass', 'styledCom'];
 export const SOCIAL_LINKS = [
     {name: 'github', href: 'https://github.com/kalibria'},
     {name: 'linkedin', href: 'https://www.linkedin.com/in/maria-kushlianskaya-228b3889/'},

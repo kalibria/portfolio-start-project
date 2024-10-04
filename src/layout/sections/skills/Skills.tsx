@@ -8,7 +8,7 @@ import styled, {keyframes} from "styled-components";
 
 export const Skills = () => {
   const listSkills = MY_SKILLS.map((skill) => {
-    return <Icon key={skill} iconId={skill} width={'100px'} height={"100px"} viewBox={"0 0 100 100"}/>
+      return <IconWrapper key={skill} ><Icon  iconId={skill} width={'100px'} height={"100px"} viewBox={"0 0 100 100"}/></IconWrapper>
 
 
 
@@ -52,3 +52,7 @@ const Icons = styled.div`
         flex: 1 0 auto;
     }
 `
+const IconWrapper = styled.span`
+    padding-left: 15px;
+    padding-right: 15px;
+    `
