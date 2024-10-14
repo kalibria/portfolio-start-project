@@ -4,6 +4,7 @@ import proj3 from 'src/assets/images/proj3.png'
 import proj4 from 'src/assets/images/proj4.png'
 import proj5 from 'src/assets/images/proj5.png'
 import proj6 from 'src/assets/images/proj6.png'
+import counters from 'src/assets/images/counters.png'
 
 
 export const MENU_ITEMS = [
@@ -47,7 +48,7 @@ export const PROJECTS: ProjectPropsType[] = [
         img: proj1,
         title: "Project Tile goes here",
         description: "This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content",
-        techStack: "HTML , JavaScript, SASS, React",
+        techStack: "React, Redux Toolkit",
         livePreviewLink: "#",
         codeLink: "#"
     },
@@ -55,8 +56,8 @@ export const PROJECTS: ProjectPropsType[] = [
     {
         id: 2,
         img: proj2,
-        title: "Project Tile goes here",
-        description: "This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content",
+        title: "Counters",
+        description: "This is sample project that contains 3 ",
         techStack: "HTML , JavaScript, SASS, React",
         livePreviewLink: "#",
         codeLink: "#"

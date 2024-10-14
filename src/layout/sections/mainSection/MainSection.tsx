@@ -5,7 +5,6 @@ import {StyledDescription} from 'src/components/description/StyledDescription';
 import {theme} from 'src/styles/Theme';
 import {FlexWrapper} from 'src/components/wrapper/FlexWrapper';
 import photo from '../../../assets/images/myphoto.webp';
-// import photo from 'src/assets/images/photo.webp'
 import {S} from './MainSection_Styled'
 import {ModalWindow} from "../../../components/modalWindow/ModalWindow";
 import Typewriter from 'typewriter-effect';

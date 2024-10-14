@@ -23,7 +23,6 @@ export const Skills = () => {
                     {listSkills}
                 </S.Icons>
             </S.IconsContainer>
-
         </FlexWrapper>
       </Container>
     </S.SkillsSection>
