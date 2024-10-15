@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/portfolio-start-project/static/css/main.e6c13ad2.css",
-    "main.js": "/portfolio-start-project/static/js/main.8821ee6f.js",
+    "main.js": "/portfolio-start-project/static/js/main.56426f74.js",
     "static/js/787.6658d8b7.chunk.js": "/portfolio-start-project/static/js/787.6658d8b7.chunk.js",
-    "static/media/proj6.png": "/portfolio-start-project/static/media/proj6.00c705220489ee361e7f.png",
-    "static/media/proj3.png": "/portfolio-start-project/static/media/proj3.9abe7d94c4b04d902175.png",
-    "static/media/proj4.png": "/portfolio-start-project/static/media/proj4.971eb955fd4a326a6a3d.png",
-    "static/media/proj2.png": "/portfolio-start-project/static/media/proj2.8838d01f8c5032c0a559.png",
-    "static/media/proj5.png": "/portfolio-start-project/static/media/proj5.3b3c7d7040c301d3c97d.png",
-    "static/media/proj1.png": "/portfolio-start-project/static/media/proj1.14c5cb59e63e0bc3ae37.png",
+    "static/media/BookingCar.png": "/portfolio-start-project/static/media/BookingCar.5bd35fa7d079f00ecfe8.png",
+    "static/media/OnlineStore.png": "/portfolio-start-project/static/media/OnlineStore.69c124cf6ac9c12a4bb2.png",
+    "static/media/CrazyRace.png": "/portfolio-start-project/static/media/CrazyRace.0e7aee4274109b48ea28.png",
+    "static/media/Tasks_manager.png": "/portfolio-start-project/static/media/Tasks_manager.0ebe6c23ba49c0115eb1.png",
+    "static/media/Counters.png": "/portfolio-start-project/static/media/Counters.f5856b662a2d10ea26c7.png",
+    "static/media/MealTracker.png": "/portfolio-start-project/static/media/MealTracker.750715e2584eb1e08ba8.png",
     "static/media/icons-sprite.svg": "/portfolio-start-project/static/media/icons-sprite.91511e3b218c988a8161c0ea38fc294f.svg",
     "static/media/myphoto.webp": "/portfolio-start-project/static/media/myphoto.90c96221c829d8223cc7.webp",
     "index.html": "/portfolio-start-project/index.html",
     "main.e6c13ad2.css.map": "/portfolio-start-project/static/css/main.e6c13ad2.css.map",
-    "main.8821ee6f.js.map": "/portfolio-start-project/static/js/main.8821ee6f.js.map",
+    "main.56426f74.js.map": "/portfolio-start-project/static/js/main.56426f74.js.map",
     "787.6658d8b7.chunk.js.map": "/portfolio-start-project/static/js/787.6658d8b7.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.8821ee6f.js"
+    "static/js/main.56426f74.js"
   ]
 }
