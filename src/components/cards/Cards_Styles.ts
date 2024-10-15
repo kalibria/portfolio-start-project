@@ -18,6 +18,9 @@ const Card = styled.div`
     color: rgba(204, 204, 204, 1);
     border-radius: 20px;
     box-shadow: 2px 2px 100px rgba(0, 0, 0, 0.2);
+    position: relative;
+    display: flex;
+    flex-direction: column;
 
     @media ${theme.media.desktop} {
         width: 373px;
@@ -84,6 +87,7 @@ export const Image = styled.img`
 const LinksWrapper = styled.div`
     width: 100%;
     padding: 20px 28px 25px 28px;
+    margin-top: auto;
 `
 
 
@@ -117,5 +121,5 @@ export const S = {
     Image,
     LinksWrapper,
     CardDescription,
-    CardTitle
+    CardTitle,
 }

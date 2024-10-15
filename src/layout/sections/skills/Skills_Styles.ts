@@ -15,16 +15,16 @@ const IconsContainer = styled.div`
 
 const Icons = styled.div`
     display: flex;
-    width: 200%; 
-    animation: ${scrollLeft} 10s linear infinite;
+    width: 400%; 
+    animation: ${scrollLeft} 15s linear infinite;
     
     & > * {
         flex: 1 0 auto;
     }
 `
 const IconWrapper = styled.span`
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
     `
 
 const SkillsSection = styled.section`
