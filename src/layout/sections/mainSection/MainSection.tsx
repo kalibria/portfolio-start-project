@@ -9,25 +9,19 @@ import {S} from './MainSection_Styled'
 import {ModalWindow} from "../../../components/modalWindow/ModalWindow";
 import Typewriter from 'typewriter-effect';
 import {MyLink} from "../../../components/MyLink/MyLink";
-import {Document, Page} from 'react-pdf'
- // import my_CV from '/my_cv.pdf'
+
 
 
 
 export const MainSection: React.FC = () => {
     const [isOpenModalWindow, setIsOpenModalWindow] = React.useState(false);
-    const [isOpenCV, setIsOpenCV] = React.useState(false);
     const openModalWindow = () => {
         setIsOpenModalWindow(true);
     }
-    const openCV = () => {
-        setIsOpenCV(true)
-    }
+
 
     return (
         <S.MainSection id={"home"}>
-            {isOpenCV ? <Document file={'/my_cv.pdf'}><Page/></Document> :
-            <>
                 <S.Background backgroundColor={theme.colors.primaryColor}/>
                 <S.Background backgroundImage={photo}/>
                 <S.MainInfo>
@@ -76,10 +70,9 @@ export const MainSection: React.FC = () => {
                                 <S.ButtonsWrapper>
                                     <MyButton text={'Email me'} iconId={"envelope"} padding={"20px 43px"}
                                               backgroundColor={"rgba(103, 108, 219, 1)"} onClick={openModalWindow}/>
-                                    <button onClick={openCV}>See my CV</button>
 
-                                    {/*<MyLink iconId={"download"} linkText={'See my cv'}*/}
-                                    {/*        link={'/my_cv.pdf'} onClick={openCV}/>*/}
+                                    <MyLink iconId={"download"} linkText={'See my cv'}
+                                             link={'https://drive.google.com/file/d/1BoK9rIRXzscfI-Pppum4ivfEOnh-id6h/view?usp=sharing'}/>
                                 </S.ButtonsWrapper>
                                 <ModalWindow isOpen={isOpenModalWindow} setIsOpen={setIsOpenModalWindow}/>
                             </S.MainDescription>
@@ -87,9 +80,6 @@ export const MainSection: React.FC = () => {
                     </Container>
 
                 </S.MainInfo>
-            </>}
-
-
         </S.MainSection>
     );
 };
