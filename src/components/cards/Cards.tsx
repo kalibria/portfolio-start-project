@@ -29,11 +29,11 @@ export const Cards:React.FC = () => {
   })
 
   return (
-    <S.Cards>
-      <FlexWrapper wrap={"wrap"} justify={"space-around"} gap={"20px"}>
-        {projectsList}
-      </FlexWrapper>
-    </S.Cards>
+      <S.Cards>
+        <S.CardsWrapper>
+          {projectsList}
+        </S.CardsWrapper>
+      </S.Cards>
 
   );
 };

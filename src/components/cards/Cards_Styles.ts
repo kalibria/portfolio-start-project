@@ -10,6 +10,12 @@ const Cards = styled.div`
     }
 `
 
+const CardsWrapper = styled.div`
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+    grid-gap: 1rem;`
+
 const Card = styled.div`
     flex-basis: 300px;
     flex-grow: 1;
@@ -21,6 +27,7 @@ const Card = styled.div`
     position: relative;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 
     @media ${theme.media.desktop} {
         width: 373px;
@@ -116,6 +123,7 @@ export const CardTitle = styled.h3`
 `
 export const S = {
     Cards,
+    CardsWrapper,
     Card,
     ImageWrapper,
     Image,
