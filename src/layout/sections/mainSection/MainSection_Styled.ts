@@ -47,7 +47,7 @@ const MainInfo = styled.div`
 `
 
 const MainSectionText = styled.span`
-    ${font({family: "Playfair Display", weight: 700, Fmax: 85, Fmin: 50})}
+    ${font({family: "Playfair Display", weight: 700, Fmax: 75, Fmin: 50})}
 `
 
 const MainDescription = styled.div`
