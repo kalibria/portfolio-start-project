@@ -30,7 +30,7 @@ export const MY_SKILLS = ['js', 'html5', 'css', 'ts', 'react', 'redux', 'next', 
 export const SOCIAL_LINKS = [
     {name: 'github', href: 'https://github.com/kalibria'},
     {name: 'linkedin', href: 'https://www.linkedin.com/in/maryia-kushlianskaya-228b3889'},
-    // {name: 'telegram', href: 'https://t.me/@mariya_kalib'},
+    {name: 'telegram', href: 'https://t.me/mariya_kalib'},
 ]
 
 type ProjectPropsType = {

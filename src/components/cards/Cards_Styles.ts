@@ -14,7 +14,12 @@ const CardsWrapper = styled.div`
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: auto;
-    grid-gap: 1rem;`
+    grid-gap: 1rem;
+    
+    @media ${theme.media.mobile} {
+        grid-template-columns: repeat(1, 1fr);
+    }
+`
 
 const Card = styled.div`
     flex-basis: 300px;
