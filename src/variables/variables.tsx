@@ -1,6 +1,4 @@
 import Tasks_manager from 'src/assets/images/myProjects/Tasks_manager.png'
-import Counters from 'src/assets/images/myProjects/Counters.png'
-import OnlineStore from 'src/assets/images/myProjects/OnlineStore.png'
 import BookingCar from 'src/assets/images/myProjects/BookingCar.png'
 import MealTracker from 'src/assets/images/myProjects/MealTracker.png'
 import CrazyRace from 'src/assets/images/myProjects/CrazyRace.png'
@@ -40,7 +38,7 @@ type ProjectPropsType = {
     description: string
     techStack: string
     livePreviewLink?: string
-    codeLink: string
+    codeLink?: string
 }
 
 export const PROJECTS: ProjectPropsType[] = [
@@ -50,7 +48,7 @@ export const PROJECTS: ProjectPropsType[] = [
         title: "Inctagram",
         description: "Now i am working on a multifunctional photostock. This project will be available for review soon",
         techStack: "Next.js, React-hook-form, Zod, Radix, Storybook",
-        codeLink: "#"
+        // codeLink: "#"
     },
     {
         id: 2,

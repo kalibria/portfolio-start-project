@@ -1,17 +1,31 @@
 import React from 'react';
-import {Icon} from 'src/components/icon/Icon';
-import {SOCIAL_LINKS} from 'src/variables/variables';
-import {S} from './Connect_Styles'
+import {S} from './Connect_Styles';
+import {ReactComponent as GithubIcon} from '../../../assets/images/svg/github-142-svgrepo-com.svg';
+import {ReactComponent as LinkedinIcon} from '../../../assets/images/svg/linkedin-svgrepo-com.svg';
+import {ReactComponent as TelegramIcon} from '../../../assets/images/svg/telegram-svgrepo-com.svg';
+
 
 export const SocialLinks:React.FC = () => {
-  const listLinks = SOCIAL_LINKS.map((link) => {
-    return <S.SocialLink href={link.href} key={link.name} target={"_blank"}> <Icon iconId={link.name} width={"35px"} height={"35px"} viewBox={"0 0 35 35"}/></S.SocialLink>
-  })
 
   return (
     <S.SocialLinks>
-      {listLinks}
+        <LinkWithIcon Icon={GithubIcon} link={'https://github.com/kalibria'}/>
+        <LinkWithIcon Icon={LinkedinIcon} link={'https://www.linkedin.com/in/maryia-kushlianskaya-228b3889'}/>
+        <LinkWithIcon Icon={TelegramIcon} link={'https://.me/mariya_kalib'}/>
     </S.SocialLinks>
   );
 };
+
+type Props = {
+    Icon: React.FC<React.SVGProps<SVGSVGElement>>,
+    link: string
+}
+
+const LinkWithIcon = ({Icon, link}: Props) => {
+    return (
+        <S.SocialLink href={link}>
+            <Icon width={35} height={35}/>
+        </S.SocialLink>
+    )
+}
 

@@ -36,12 +36,18 @@ const SocialLinks = styled.div`
 `
 
 const SocialLink = styled.a`
-  color: ${theme.colors.primaryTextColor};
+    color: ${theme.colors.primaryTextColor};
 
-  &:hover {
-    color: ${theme.colors.accentColor}
-  }
-  `
+    svg {
+        transition: fill 0.3s ease; // Smooth transition for hover effect
+    }
+
+    svg {
+        &:hover {
+            color: ${theme.colors.accentColor}; // Hover color
+        }
+    }
+`
 
 export const S = {
     Connect,

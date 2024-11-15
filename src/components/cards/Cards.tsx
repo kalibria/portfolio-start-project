@@ -12,9 +12,10 @@ export const Cards:React.FC = () => {
     return <S.Card key={proj.id}>
       <S.ImageWrapper>
         <S.Image src={proj.img} alt={proj.title}/>
-        <MyButton padding={'10px 20px'} backgroundColor={theme.colors.accentColor} >
+        {proj.codeLink &&  <MyButton padding={'10px 20px'} backgroundColor={theme.colors.accentColor} >
           <a href={proj.livePreviewLink ? proj.livePreviewLink : proj.codeLink} target={'_blank'}>{'View project'}</a>
         </MyButton>
+        }
       </S.ImageWrapper>
       <S.CardTitle>{proj.title}</S.CardTitle>
       <S.CardDescription>{proj.description}</S.CardDescription>
@@ -22,7 +23,8 @@ export const Cards:React.FC = () => {
       <S.LinksWrapper>
         <FlexWrapper justify={"space-between"}>
           {proj.livePreviewLink && <MyLink iconId={"chain"} linkText={"Live Preview"} link = {proj.livePreviewLink} />}
-          <MyLink iconId={"githublink"} linkText={"View Code"} link={proj.codeLink}/>
+          {proj.codeLink && <MyLink iconId={"githublink"} linkText={"View Code"} link={proj.codeLink}/>}
+
         </FlexWrapper>
       </S.LinksWrapper>
     </S.Card>
