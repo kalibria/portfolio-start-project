@@ -1,4 +1,5 @@
 import styled, {keyframes} from "styled-components";
+import {theme} from "../../../styles/Theme";
 
 const scrollLeft =  keyframes `
     0% {
@@ -28,9 +29,33 @@ const IconWrapper = styled.span`
     `
 
 const SkillsSection = styled.section`
-  min-height: 200px;
-  display: flex;
-  align-items: center;
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    padding: 100px 7px;
+    text-align: center;
+`
+
+const SkillsWrapper = styled.div`
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    row-gap: 40px;
+    margin: 100px auto;
+
+    @media ${theme.media.mobile} {
+        grid-template-columns: repeat(3, 1fr);
+        svg {
+            width: 50px;
+            height: 50px;
+        }
+    }
+`
+
+
+const SkillItemWrapper = styled.div`
+text-align: center;
+    
 `
 
 export const S = {
@@ -38,5 +63,7 @@ export const S = {
     IconsContainer,
     Icons,
     IconWrapper,
-    SkillsSection
+    SkillsSection,
+    SkillsWrapper,
+    SkillItemWrapper
 }

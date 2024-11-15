@@ -7,7 +7,7 @@ export const Footer:React.FC = () => {
 
   return (
     <S.Footer>
-      <p>Created by <span>Maria Kushlianskaya</span></p>
+      <p>Created by <span>Mariya Kushlianskaya</span></p>
       <span>&copy; {startYear === currentYear ? startYear : `${startYear} - ${currentYear}`}</span>
     </S.Footer>
   );

@@ -47,7 +47,7 @@ export const PROJECTS: ProjectPropsType[] = [
         img: proj1,
         title: "Inctagram",
         description: "Now i am working on a multifunctional photostock. This project will be available for review soon",
-        techStack: "Next.js, React-hook-form, Zod, Radix, Storybook",
+        techStack: "Next.js, RTK Query, React-hook-form, Zod, Radix, Storybook",
         // codeLink: "#"
     },
     {
