@@ -1,9 +1,10 @@
 import styled from "styled-components";
 import {theme} from "../../../styles/Theme";
 import {font} from "../../../styles/Common";
+import {motion} from "framer-motion";
 
 
-const MainSection = styled.section`
+const MainSection = motion(styled.section`
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,14 +15,14 @@ const MainSection = styled.section`
     @media ${theme.media.mobile} {
         flex-direction: column-reverse;
     }
-`
+`)
 
 type StyledBackgroundPropsType = {
     backgroundColor?: string
     backgroundImage?: string
 }
 
-const Background = styled.div<StyledBackgroundPropsType>`
+const Background = motion(styled.div<StyledBackgroundPropsType>`
     background-color: ${props => props.backgroundColor};
     background-image: url(${props => props.backgroundImage});
     background-size: cover;
@@ -34,9 +35,9 @@ const Background = styled.div<StyledBackgroundPropsType>`
         width: 100vw;
         flex-basis: 450px;
     }
-`
+`)
 
-const MainInfo = styled.div`
+const MainInfo = motion(styled.div`
     width: 100%;
     position: absolute;
     top: 125px;
@@ -44,7 +45,7 @@ const MainInfo = styled.div`
     @media ${theme.media.mobile} {
         top: 510px
     }
-`
+`)
 
 const MainSectionText = styled.span`
     ${font({family: "Playfair Display", weight: 700, Fmax: 75, Fmin: 50})}
@@ -83,6 +84,7 @@ const Title = styled.h1`
     font-size: 20px;
     font-weight: 400;
 `
+
 
 
 export const S = {

@@ -9,6 +9,9 @@ import {S} from './MainSection_Styled'
 import {ModalWindow} from "../../../components/modalWindow/ModalWindow";
 import Typewriter from 'typewriter-effect';
 import {MyLink} from "../../../components/MyLink/MyLink";
+import MotionMainSection from "./MotionMainSection";
+
+
 
 
 
@@ -21,24 +24,24 @@ export const MainSection: React.FC = () => {
 
 
     return (
-        <S.MainSection id={"home"}>
-                <S.Background backgroundColor={theme.colors.primaryColor}/>
-                <S.Background backgroundImage={photo}/>
-                <S.MainInfo>
-                    <Container>
-                        <FlexWrapper direction={'column'}>
-                            <S.MainSectionText><Typewriter
-                                options={{
-                                    autoStart: true,
-                                    cursor: ""
-                                }}
-                                onInit={(typewriter) => {
-                                    typewriter.typeString('Hello!')
-                                        .start()
-                                }}
-                            />
-                            </S.MainSectionText>
-                            <S.MainSectionText>
+        <MotionMainSection>
+            <S.Background backgroundColor={theme.colors.primaryColor}/>
+            <S.Background backgroundImage={photo}/>
+            <S.MainInfo>
+                <Container>
+                    <FlexWrapper direction={'column'}>
+                        <S.MainSectionText><Typewriter
+                            options={{
+                                autoStart: true,
+                                cursor: ""
+                        }}
+                            onInit={(typewriter) => {
+                                typewriter.typeString('Hello!')
+                                    .start()
+                            }}
+                        />
+                        </S.MainSectionText>
+                        <S.MainSectionText>
                                 <Typewriter
                                     options={{
                                         autoStart: true,
@@ -66,21 +69,21 @@ export const MainSection: React.FC = () => {
                             </S.MainSectionText>
                             <S.MainDescription>
                                 <StyledDescription>I’am <S.Title> web developer</S.Title> who
-                                    implements any requests from creating responsive websites to developing user-friendly applications</StyledDescription>
+                                    implements any requests from creating responsive websites to developing
+                                    user-friendly applications</StyledDescription>
                                 <S.ButtonsWrapper>
                                     <MyButton text={'Email me'} iconId={"envelope"} padding={"20px 43px"}
                                               backgroundColor={"rgba(103, 108, 219, 1)"} onClick={openModalWindow}/>
 
                                     <MyLink iconId={"download"} linkText={'See my cv'}
-                                             link={'https://drive.google.com/file/d/1BoK9rIRXzscfI-Pppum4ivfEOnh-id6h/view?usp=sharing'}/>
+                                            link={'https://drive.google.com/file/d/1BoK9rIRXzscfI-Pppum4ivfEOnh-id6h/view?usp=sharing'}/>
                                 </S.ButtonsWrapper>
                                 <ModalWindow isOpen={isOpenModalWindow} setIsOpen={setIsOpenModalWindow}/>
                             </S.MainDescription>
                         </FlexWrapper>
                     </Container>
-
                 </S.MainInfo>
-        </S.MainSection>
-    );
+        </MotionMainSection>
+    )
 };
 
