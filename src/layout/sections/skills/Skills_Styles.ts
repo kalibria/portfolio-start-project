@@ -1,5 +1,6 @@
 import styled, {keyframes} from "styled-components";
 import {theme} from "../../../styles/Theme";
+import {motion} from "framer-motion";
 
 const scrollLeft =  keyframes `
     0% {

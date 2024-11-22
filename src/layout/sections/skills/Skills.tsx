@@ -20,34 +20,47 @@ import {ReactComponent as ReactHookFormIcon} from '../../../assets/images/svg/re
 import {ReactComponent as MUIIcon} from '../../../assets/images/svg/material-ui-svgrepo-com.svg'
 import {SectionTitle} from "../../../components/sectionTitle/SectionTitle";
 import {SkillItem} from "./SkillItem";
+import { motion, useScroll, useTransform } from 'framer-motion';
 
 
 export const Skills = () => {
-  return (
-    <S.SkillsSection id={"skills"}>
-      <Container>
-          <SectionTitle>Skills</SectionTitle>
-          <S.SkillsWrapper>
-              <SkillItem Icon={ReactLIcon} description={'React'}/>
-              <SkillItem Icon={ReduxIcon} description={'RTK Query'}/>
-              <SkillItem Icon={NextIcon} description={'Next.js'}/>
-              <SkillItem Icon={GraphQLIcon} description={'GraphQL'}/>
-              <SkillItem Icon={TSIcon} description={'TypeScript'}/>
-              <SkillItem Icon={JSIcon} description={'JavaScript'}/>
-              <SkillItem Icon={ApiIcon} description={'Rest API'}/>
-              <SkillItem Icon={ReactHookFormIcon} description={'React Hook Form'}/>
-              <SkillItem Icon={HTMLIcon} description={'HTML'}/>
-              <SkillItem Icon={CssIcon} description={'CSS'}/>
-              <SkillItem Icon={GitIcon} description={'Git'}/>
-              <SkillItem Icon={JestIcon} description={'Jest'}/>
-              <SkillItem Icon={PostmanIcon} description={'Postman'}/>
-              <SkillItem Icon={MUIIcon} description={'MUI'}/>
-              <SkillItem Icon={StorybookIcon} description={'Storybook'}/>
-              {/*<SkillItem Icon={FigmaIcon} description={'Figma'}/>*/}
-              <SkillItem Icon={StyledCompIcon} description={'StyledComponents'}/>
-          </S.SkillsWrapper>
-      </Container>
-    </S.SkillsSection>
+    const { scrollYProgress } = useScroll();
+
+    const opacity = useTransform(scrollYProgress, [0, 0.2], [0, 1]);
+    const y = useTransform(scrollYProgress, [0, 0.2], [50, 0]);
+    return (
+        <motion.div
+            style={{
+                opacity,
+                y,
+                transition: "all 0.8s ease-out", // Smooth transition for all properties
+            }}
+        >
+            <S.SkillsSection id={"skills"}>
+              <Container>
+                  <SectionTitle>Skills</SectionTitle>
+                  <S.SkillsWrapper>
+                      <SkillItem Icon={ReactLIcon} description={'React'}/>
+                      <SkillItem Icon={ReduxIcon} description={'RTK Query'}/>
+                      <SkillItem Icon={NextIcon} description={'Next.js'}/>
+                      <SkillItem Icon={GraphQLIcon} description={'GraphQL'}/>
+                      <SkillItem Icon={TSIcon} description={'TypeScript'}/>
+                      <SkillItem Icon={JSIcon} description={'JavaScript'}/>
+                      <SkillItem Icon={ApiIcon} description={'Rest API'}/>
+                      <SkillItem Icon={ReactHookFormIcon} description={'React Hook Form'}/>
+                      <SkillItem Icon={HTMLIcon} description={'HTML'}/>
+                      <SkillItem Icon={CssIcon} description={'CSS'}/>
+                      <SkillItem Icon={GitIcon} description={'Git'}/>
+                      <SkillItem Icon={JestIcon} description={'Jest'}/>
+                      <SkillItem Icon={PostmanIcon} description={'Postman'}/>
+                      <SkillItem Icon={MUIIcon} description={'MUI'}/>
+                      <SkillItem Icon={StorybookIcon} description={'Storybook'}/>
+                      {/*<SkillItem Icon={FigmaIcon} description={'Figma'}/>*/}
+                      <SkillItem Icon={StyledCompIcon} description={'StyledComponents'}/>
+                  </S.SkillsWrapper>
+              </Container>
+            </S.SkillsSection>
+        </motion.div>
   );
 };
 

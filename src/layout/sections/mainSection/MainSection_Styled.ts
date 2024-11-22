@@ -4,11 +4,12 @@ import {font} from "../../../styles/Common";
 import {motion} from "framer-motion";
 
 
-const MainSection = motion(styled.section`
+const MainSection = motion.create(styled.section`
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 743px;
+    height: 100vh;
 
     position: relative;
 
@@ -22,30 +23,32 @@ type StyledBackgroundPropsType = {
     backgroundImage?: string
 }
 
-const Background = motion(styled.div<StyledBackgroundPropsType>`
+const Background = styled.div<StyledBackgroundPropsType>`
     background-color: ${props => props.backgroundColor};
     background-image: url(${props => props.backgroundImage});
     background-size: cover;
     background-repeat: no-repeat;
     background-position-y: 50%;
     flex-basis: 50%;
-    height: 743px;
+    //height: 743px;
+    height: 100vh;
 
     @media ${theme.media.mobile} {
         width: 100vw;
         flex-basis: 450px;
     }
-`)
+`
 
-const MainInfo = motion(styled.div`
+const MainInfo = styled.div`
     width: 100%;
+    height: 100vh;
     position: absolute;
     top: 125px;
 
     @media ${theme.media.mobile} {
         top: 510px
     }
-`)
+`
 
 const MainSectionText = styled.span`
     ${font({family: "Playfair Display", weight: 700, Fmax: 75, Fmin: 50})}
@@ -54,7 +57,7 @@ const MainSectionText = styled.span`
 const MainDescription = styled.div`
     max-width: 404px;
     min-height: 202px;
-    margin-top: 10px;
+    margin-top: 30px;
 `
 
 const ButtonsWrapper = styled.div`

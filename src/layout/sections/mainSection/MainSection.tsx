@@ -29,7 +29,7 @@ export const MainSection: React.FC = () => {
             <S.Background backgroundImage={photo}/>
             <S.MainInfo>
                 <Container>
-                    <FlexWrapper direction={'column'}>
+                    <FlexWrapper direction={'column'} justify={'center'} height={'80vh'}>
                         <S.MainSectionText><Typewriter
                             options={{
                                 autoStart: true,
