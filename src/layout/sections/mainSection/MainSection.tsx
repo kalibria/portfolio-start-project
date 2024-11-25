@@ -76,7 +76,7 @@ export const MainSection: React.FC = () => {
                                               backgroundColor={"rgba(103, 108, 219, 1)"} onClick={openModalWindow}/>
 
                                     <MyLink iconId={"download"} linkText={'See my cv'}
-                                            link={'https://drive.google.com/file/d/1BoK9rIRXzscfI-Pppum4ivfEOnh-id6h/view?usp=sharing'}/>
+                                            link={'https://drive.google.com/file/d/1wAb7xqZuvF1dAM-4KVhIjU3mDCHqQSgZ/view?usp=sharing'}/>
                                 </S.ButtonsWrapper>
                                 <ModalWindow isOpen={isOpenModalWindow} setIsOpen={setIsOpenModalWindow}/>
                             </S.MainDescription>
