@@ -1,23 +1,41 @@
 {
   "files": {
     "main.css": "/portfolio-start-project/static/css/main.e6c13ad2.css",
-    "main.js": "/portfolio-start-project/static/js/main.2bf1b7d1.js",
+    "main.js": "/portfolio-start-project/static/js/main.8843a540.js",
     "static/js/787.6658d8b7.chunk.js": "/portfolio-start-project/static/js/787.6658d8b7.chunk.js",
     "static/media/BookingCar.png": "/portfolio-start-project/static/media/BookingCar.5bd35fa7d079f00ecfe8.png",
-    "static/media/OnlineStore.png": "/portfolio-start-project/static/media/OnlineStore.69c124cf6ac9c12a4bb2.png",
     "static/media/CrazyRace.png": "/portfolio-start-project/static/media/CrazyRace.0e7aee4274109b48ea28.png",
     "static/media/Tasks_manager.png": "/portfolio-start-project/static/media/Tasks_manager.0ebe6c23ba49c0115eb1.png",
-    "static/media/Counters.png": "/portfolio-start-project/static/media/Counters.f5856b662a2d10ea26c7.png",
     "static/media/MealTracker.png": "/portfolio-start-project/static/media/MealTracker.750715e2584eb1e08ba8.png",
-    "static/media/icons-sprite.svg": "/portfolio-start-project/static/media/icons-sprite.91511e3b218c988a8161c0ea38fc294f.svg",
+    "static/media/proj1.png": "/portfolio-start-project/static/media/proj1.14c5cb59e63e0bc3ae37.png",
+    "static/media/icons-sprite.svg": "/portfolio-start-project/static/media/icons-sprite.0e6f50962246cd220a74145011ad6fa7.svg",
     "static/media/myphoto.webp": "/portfolio-start-project/static/media/myphoto.90c96221c829d8223cc7.webp",
+    "static/media/postman-icon-svgrepo-com.svg": "/portfolio-start-project/static/media/postman-icon-svgrepo-com.c74cd48d00339ba03ff2e6ed3f9d0c4d.svg",
+    "static/media/api-svgrepo-com.svg": "/portfolio-start-project/static/media/api-svgrepo-com.c78a370b7617485ccaab4249c55a901f.svg",
+    "static/media/git-svgrepo-com.svg": "/portfolio-start-project/static/media/git-svgrepo-com.379fdf1e5f52d6f8368a505a4c20185b.svg",
+    "static/media/graphql-svgrepo-com.svg": "/portfolio-start-project/static/media/graphql-svgrepo-com.6e83b00ac420d294b6f06f2624e1dd32.svg",
+    "static/media/typescript-icon-svgrepo-com.svg": "/portfolio-start-project/static/media/typescript-icon-svgrepo-com.5a8731afb70af69ca7846c3a07080df4.svg",
+    "static/media/styled-components-svgrepo-com.svg": "/portfolio-start-project/static/media/styled-components-svgrepo-com.cabf4543995969d05b2e1d8dfdc19e4c.svg",
+    "static/media/storybook-icon-svgrepo-com.svg": "/portfolio-start-project/static/media/storybook-icon-svgrepo-com.c143760c5be7f175b06e6be31349892f.svg",
+    "static/media/redux-svgrepo-com.svg": "/portfolio-start-project/static/media/redux-svgrepo-com.a907b9f98d324503c0c0d9ac2991eb03.svg",
+    "static/media/jest-svgrepo-com.svg": "/portfolio-start-project/static/media/jest-svgrepo-com.61d2e3e240596ca044212b25ada3c84e.svg",
+    "static/media/github-142-svgrepo-com.svg": "/portfolio-start-project/static/media/github-142-svgrepo-com.e92e97326a73bce295f32dd006672540.svg",
+    "static/media/next-dot-js-svgrepo-com.svg": "/portfolio-start-project/static/media/next-dot-js-svgrepo-com.1e78b276ebdf2de3fc00533ccd86aee1.svg",
+    "static/media/react-hook-form-logo-only.svg": "/portfolio-start-project/static/media/react-hook-form-logo-only.3b57c8bf44d58d1e7fd1f390e5f79cca.svg",
+    "static/media/react-1-logo-svgrepo-com.svg": "/portfolio-start-project/static/media/react-1-logo-svgrepo-com.f57b6fbfa6088fd494c122d781342874.svg",
     "index.html": "/portfolio-start-project/index.html",
+    "static/media/js-svgrepo-com.svg": "/portfolio-start-project/static/media/js-svgrepo-com.fef7215d0d3e578f01ad70419d4c4308.svg",
+    "static/media/telegram-svgrepo-com.svg": "/portfolio-start-project/static/media/telegram-svgrepo-com.0b6bc8db6ae6662474d7d7d9f68e2c54.svg",
+    "static/media/linkedin-svgrepo-com.svg": "/portfolio-start-project/static/media/linkedin-svgrepo-com.3fba2ef71588a3c5de8e11f34e124c9d.svg",
+    "static/media/material-ui-svgrepo-com.svg": "/portfolio-start-project/static/media/material-ui-svgrepo-com.734426c25d85d6f02b49b98d28ef9f03.svg",
+    "static/media/css3-svgrepo-com.svg": "/portfolio-start-project/static/media/css3-svgrepo-com.c56383af0fc7fa213642ae1fc5fa4b29.svg",
+    "static/media/html-5-svgrepo-com.svg": "/portfolio-start-project/static/media/html-5-svgrepo-com.0107c93943a8f415b5db64ebb0a9d12d.svg",
     "main.e6c13ad2.css.map": "/portfolio-start-project/static/css/main.e6c13ad2.css.map",
-    "main.2bf1b7d1.js.map": "/portfolio-start-project/static/js/main.2bf1b7d1.js.map",
+    "main.8843a540.js.map": "/portfolio-start-project/static/js/main.8843a540.js.map",
     "787.6658d8b7.chunk.js.map": "/portfolio-start-project/static/js/787.6658d8b7.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.2bf1b7d1.js"
+    "static/js/main.8843a540.js"
   ]
 }
