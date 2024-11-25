@@ -48,7 +48,7 @@ export const MainSection: React.FC = () => {
                                         cursor: "",
                                     }}
                                     onInit={(typewriter) => {
-                                        typewriter.pauseFor(2000)
+                                        typewriter.pauseFor(1000)
                                             .typeString('I’m Mariya')
                                             .start()
                                     }}
@@ -61,7 +61,7 @@ export const MainSection: React.FC = () => {
                                         cursor: "",
                                     }}
                                     onInit={(typewriter) => {
-                                        typewriter.pauseFor(4000)
+                                        typewriter.pauseFor(2200)
                                             .typeString('Kushlianskaya')
                                             .start()
                                     }}

@@ -11,7 +11,7 @@ export const MotionMainSection = ({ children }: Props) => {
         <S.MainSection
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 2, ease: 'easeOut' }}
+            transition={{ duration: 1.5, ease: 'easeOut' }}
         >
             {children}
         </S.MainSection>
