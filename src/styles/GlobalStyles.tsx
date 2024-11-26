@@ -6,6 +6,8 @@ export const GlobalStyles = createGlobalStyle`
     font-family: "Poppins", sans-serif;
     color: ${theme.colors.primaryTextColor};
     line-height: 1.2;
+      overflow-y: auto;
+      position: relative;
   }
   
   *,
