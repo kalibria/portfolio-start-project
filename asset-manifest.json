@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio-start-project/static/css/main.e6c13ad2.css",
-    "main.js": "/portfolio-start-project/static/js/main.446f2839.js",
+    "main.js": "/portfolio-start-project/static/js/main.7e4b4b11.js",
     "static/js/787.6658d8b7.chunk.js": "/portfolio-start-project/static/js/787.6658d8b7.chunk.js",
     "static/media/BookingCar.png": "/portfolio-start-project/static/media/BookingCar.5bd35fa7d079f00ecfe8.png",
     "static/media/CrazyRace.png": "/portfolio-start-project/static/media/CrazyRace.0e7aee4274109b48ea28.png",
@@ -31,11 +31,11 @@
     "static/media/css3-svgrepo-com.svg": "/portfolio-start-project/static/media/css3-svgrepo-com.c56383af0fc7fa213642ae1fc5fa4b29.svg",
     "static/media/html-5-svgrepo-com.svg": "/portfolio-start-project/static/media/html-5-svgrepo-com.0107c93943a8f415b5db64ebb0a9d12d.svg",
     "main.e6c13ad2.css.map": "/portfolio-start-project/static/css/main.e6c13ad2.css.map",
-    "main.446f2839.js.map": "/portfolio-start-project/static/js/main.446f2839.js.map",
+    "main.7e4b4b11.js.map": "/portfolio-start-project/static/js/main.7e4b4b11.js.map",
     "787.6658d8b7.chunk.js.map": "/portfolio-start-project/static/js/787.6658d8b7.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.446f2839.js"
+    "static/js/main.7e4b4b11.js"
   ]
 }
