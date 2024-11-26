@@ -7,12 +7,19 @@ import styled from 'styled-components';
 import {Skills} from './layout/sections/skills/Skills';
 import {Header} from './layout/header/Header';
 import {GoTopBtn} from "./goTopBtn/GoTopBtn";
+import Snowfall from "react-snowfall";
+import React from "react";
 
 
 
 function App() {
     return (
         <StyledMain className="App">
+            <Snowfall snowflakeCount={70} style={{
+                position: 'fixed',
+                width: '100vw',
+                height: '100vh',
+            }}/>
             <Header/>
             <MainSection/>
             <Skills/>

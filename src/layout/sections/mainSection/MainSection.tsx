@@ -10,6 +10,7 @@ import {ModalWindow} from "../../../components/modalWindow/ModalWindow";
 import Typewriter from 'typewriter-effect';
 import {MyLink} from "../../../components/MyLink/MyLink";
 import MotionMainSection from "./MotionMainSection";
+import Snowfall from "react-snowfall";
 
 
 
